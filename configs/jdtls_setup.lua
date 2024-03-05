@@ -206,13 +206,11 @@ function M.setup()
     os = "linux"
   end
   local path_to_config = path_to_jdtls .. "/config_" .. os
-  print("path to config: " .. path_to_config)
 
   local lombok_path = path_to_jdtls .. "/lombok.jar"
 
   -- 💀
   local path_to_jar = vim.fn.glob(path_to_jdtls .. "/plugins/org.eclipse.equinox.launcher_*.jar")
-  print("local path" .. path_to_jar)
   local bundles = {
     vim.fn.glob(path_to_jdebug .. "/extension/server/com.microsoft.java.debug.plugin-*.jar", true),
   }
