@@ -58,7 +58,7 @@ local plugins = {
       "rcarriga/nvim-dap-ui",
     },
     config = function(_, opts)
-      local path = "~/local/share/nvim/mason/packages/debugpy/bin/python"
+      local path = "~/.local/share/nvim/mason/packages/debugpy/bin/python"
       require("dap-python").setup(path)
       require("core.utils").load_mappings "dap_python"
     end,
