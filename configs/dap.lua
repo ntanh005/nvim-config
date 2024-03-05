@@ -1,6 +1,4 @@
 local dap = require("dap")
-
-print('dap setup')
 dap.adapters["pwa-node"] = {
   type = "server",
   host = "localhost",
